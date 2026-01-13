@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest",
+    "cypress": "cypress run",
     "cy:run": "start-server-and-test start http://localhost:3000 cypress run"
   },
   "keywords": [],
