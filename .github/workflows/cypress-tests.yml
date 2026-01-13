@@ -22,4 +22,5 @@ jobs:
         run: npx cypress verify
 
       - name: Run Cypress tests
-        run: npx cypress run --project projet_integration_deploiement
+        run: npx cypress run
+        
