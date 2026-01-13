@@ -17,10 +17,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd PROJET_INTEGRATION_DEPLOIEMENT
+          cd PROJET_INTEGRATION_DEPLOIEMENT-main
           npm ci
 
       - name: Run Cypress tests
         run: |
-          cd PROJET_INTEGRATION_DEPLOIEMENT
+          cd PROJET_INTEGRATION_DEPLOIEMENT-main
           npx cypress run
