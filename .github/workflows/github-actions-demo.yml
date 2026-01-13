@@ -14,3 +14,9 @@ jobs:
 
       - name: Run python script
         run: python job.py
+
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run tests
+        run: pytest
