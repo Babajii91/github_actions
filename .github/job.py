@@ -1,2 +1,2 @@
 a = 2
-print("coucou", a)
+print("coucou", a + 1)
