@@ -1,0 +1,29 @@
+name: Node CI
+
+on: [push, pull_request]
+
+jobs:
+  test-node:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: node_app
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Jest tests
+        run: npm test
+
+      - name: Run Cypress tests
+        run: npm run cy:run
