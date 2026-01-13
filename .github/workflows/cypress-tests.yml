@@ -16,11 +16,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: |
-          cd PROJET_INTEGRATION_DEPLOIEMENT-main
-          npm ci
+        run: npm ci
 
       - name: Run Cypress tests
-        run: |
-          cd PROJET_INTEGRATION_DEPLOIEMENT-main
-          npx cypress run
+        run: npx cypress run
